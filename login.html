@@ -3,6 +3,7 @@
 <html>
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
     <div class="header">
         <!--This image should be bigger, then shrink with page. Leaving as is for now-->
@@ -17,7 +18,7 @@
 </head>
 
 
-<form action="action_page.php" method="post" style="margin-top: 60px">
+<form data-login="form" action="action_page.php" method="post" style="margin-top: 60px">
     <div class="container">
         <label for="uname"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="uname" required>
@@ -49,7 +50,7 @@
 
     <!-- Modal Content -->
 
-    <form class="modal-content animate" action="/action_page.php">
+    <form data-signup="form" class="modal-content animate" action="/action_page.php">
 
         <div class="container">
             <label for="uname"><b>Username</b></label>
@@ -76,5 +77,8 @@
 
 
 <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+
+<script src="scripts/login.js" charset="utf-8"></script>
+<script src="scripts/loginmain.js" charset="utf-8"></script>
 
 </html>

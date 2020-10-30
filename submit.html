@@ -3,6 +3,7 @@
 <html>
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico">
     <div class="header">
         <!--This image should be bigger, then shrink with page. Leaving as is for now-->
@@ -25,7 +26,7 @@
 
 
 
-    <form action="/action_page.php">
+    <form data-submit="form" action="/action_page.php">
         <label for="bfname">Blackmailer First name:</label><br>
         <input type="text" id="bfname" name="bfname" placeholder="John" pattern="[A-Za-z]{1,32}" required><br>
         <label for="blname">Blackmailer Last name:</label><br>
@@ -53,7 +54,8 @@
     </main>
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
     <script src="scripts/main.js" charset="utf-8"></script>
-
+    <script src="scripts/submit.js" charset="utf-8"></script>
+    <script src="scripts/submitmain.js" charset="utf-8"></script>
 
 
 </body>
