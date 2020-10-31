@@ -7,7 +7,7 @@
     var submit = new RemoveForm(SUBMIT_SELECTOR)
 
     submit.addRemoveHandler(function (data) {
-        console.log('submitting removal...')
+        console.log('submitting submission...')
     });
 
 
